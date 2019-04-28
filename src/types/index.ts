@@ -1,3 +1,4 @@
+// 请求方法
 export type Method =
   | 'get'
   | 'GET'
@@ -14,6 +15,7 @@ export type Method =
   | 'patch'
   | 'PATCH'
 
+// axios请求参数接口
 export interface AxiosRequestConfig {
   url: string
   method?: Method
