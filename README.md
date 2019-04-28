@@ -35,7 +35,7 @@ npm i typescript-axios
 
 **课程概述：** 基于TypeScript从零重构axios，从零开始重构一个功能完整的JS库，并进行单元测试与部署发布，是学习造轮子的不二之选。
 
-**请支持正版：** 强力推荐您购买正版课程跟黄老师一起学习TypeScript，使用微信扫下面的海报二维码或者 [点击此链接查看购买(https://s.imooc.com/SwIaZGv)) 购买有优惠价格（现在能优惠 -￥60），而且加我微信:「shuaushuaibobo」，我会再把全部推荐费 ￥32.80 微信红包全部返回给您，共勉，加油！
+**请支持正版：** 强力推荐您购买正版课程跟黄老师一起学习TypeScript，使用微信扫下面的海报二维码或者 [点击此链接查看购买](https://s.imooc.com/SwIaZGv)) 购买有优惠价格（现在能优惠 -￥60），而且加我微信:「shuaushuaibobo」，我会再把全部推荐费 ￥32.80 微信红包全部返回给您，共勉，加油！
 
 <a href="https://s.imooc.com/SwIaZGv" target="_blank">
 
