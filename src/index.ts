@@ -1,17 +1,17 @@
-import { AxiosRequestConfig } from './types'
+import { AxiosRequestConfig, AxiosPromise } from './types'
 import xhr from './xhr'
 import { buildURL } from './helper/url'
 import { transformRequest } from './helper/data'
 import { processHeaders } from './helper/headers'
 
 // typescript axios
-function axios(config: AxiosRequestConfig): void {
+function axios(config: AxiosRequestConfig): AxiosPromise {
   processConfig(config)
-  xhr(config)
+  return xhr(config)
 }
 
 // 处理参数
-function processConfig(config: AxiosRequestConfig): void {
+function processConfig(config: AxiosRequestConfig) {
   // 转换URL
   config.url = transformURL(config)
   // 处理headers
