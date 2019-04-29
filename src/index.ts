@@ -1,13 +1,15 @@
-import { AxiosRequestConfig, AxiosPromise } from './types'
+import { AxiosRequestConfig, AxiosPromise, AxiosResponse } from './types'
 import xhr from './xhr'
 import { buildURL } from './helper/url'
-import { transformRequest } from './helper/data'
+import { transformRequest, transformResponse } from './helper/data'
 import { processHeaders } from './helper/headers'
 
 // typescript axios
 function axios(config: AxiosRequestConfig): AxiosPromise {
   processConfig(config)
-  return xhr(config)
+  return xhr(config).then(res => {
+    return transformResponseData(res)
+  })
 }
 
 // 处理参数
@@ -35,6 +37,11 @@ function transformHeaders(config: AxiosRequestConfig): any {
 // 处理数据
 function transformRequestData(config: AxiosRequestConfig): any {
   return transformRequest(config.data)
+}
+
+function transformResponseData(res: AxiosResponse): AxiosResponse {
+  res.data = transformResponse(res.data)
+  return res
 }
 
 export default axios
