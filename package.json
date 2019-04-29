@@ -1,15 +1,19 @@
 {
   "name": "typescript-axios",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "基于TypeScript从零重构axios",
+  "keywords": [
+    "typescript-axios",
+    "typescript",
+    "axios"
+  ],
   "main": "dist/typescript-axios.umd.js",
   "module": "dist/typescript-axios.es5.js",
   "typings": "dist/types/typescript-axios.d.ts",
   "files": [
     "dist"
   ],
-  "author": "liangfengbo <itbo@163.com>",
+  "author": "liangfengbo <itbo@163.com> https://github.com/liangfengbo/typescript-axios",
   "repository": {
     "type": "git",
     "url": ""
